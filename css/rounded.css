@@ -1,0 +1,24 @@
+/* this is CSS3 ...making our div box to have a rounded corner and shadows using css 3*/
+
+body{
+  text-align: center;
+}
+
+#box{
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid blue;
+  /* background: -webkit-linear-gradient(45deg,black,white); */
+  background: -webkit-radial-gradient(center,circle,red 0%, orange 50%);
+  border-radius: 25px;
+  box-shadow: rgba(110,110,110,.6) 10px 10px 10px /* inset */;
+  /* inset means instead of the shadow showing out it makes the shadow look as if something is casting it from the inside */
+}
+
+#text{
+  font: bold 30px Century Gothic;
+  text-shadow: rgb(110,110,110) 3px 3px 5px;
+}
