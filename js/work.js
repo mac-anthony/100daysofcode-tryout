@@ -6,7 +6,7 @@ function getStuff(){
   var list = document.querySelectorAll('#tuna');
   // list[1].onclick=doSomething;
   for(var i=0; i < list.length; i++){
-    list[1].onclick=talk;
+    list[i].onclick=talk;
   }
 }
 
