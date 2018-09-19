@@ -1,4 +1,5 @@
 
+console.log('starting video player')
 function doFirst() {
   barSize = 600;
   myMovie = document.getElementById('my-movie');
@@ -8,7 +9,7 @@ function doFirst() {
 
   progressBar = document.getElementById('progressBar');
 
-  playButton.addEventListener('click', playorpause , false);
+  playButton.addEventListener('click', playorpause, false);
 
   bar.addEventListener('click', clickedBar, false);
 }
@@ -29,12 +30,12 @@ function playorpause() {
 
 function update() {
   if (!myMovie.ended) {
-    var size = parseInt(myMovie.currentTime*barSize/myMovie.duration); //this changes the size of the progressBar
+    var size = parseInt(myMovie.currentTime * barSize / myMovie.duration); //this changes the size of the progressBar
 
     progressBar.style.width = size + 'px';
   }
-  else{
-    progressBar.style.width= '0px';
+  else {
+    progressBar.style.width = '0px';
     playButton.innerHTML = 'PLAY';
     window.clearInterval(updateBar);
   }
@@ -42,12 +43,12 @@ function update() {
 
 
 function clickedBar(e) {
-   if (!myMovie.paused && !myMovie.ended){
-     var mouseX = e.pageX - bar.offsetLeft; 
-     var newTime = mouseX * myMovie.duration / barSize;
-     myMovie.currentTime = newTime;
-     progressBar.style.width = mouseX + 'px';
-   }
+  if (!myMovie.paused && !myMovie.ended) {
+    var mouseX = e.pageX - bar.offsetLeft;
+    var newTime = mouseX * myMovie.duration / barSize;
+    myMovie.currentTime = newTime;
+    progressBar.style.width = mouseX + 'px';
+  }
 }
 
 window.addEventListener('load', doFirst, false)
