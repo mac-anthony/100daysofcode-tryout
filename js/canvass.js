@@ -31,6 +31,8 @@ function executeFirst() {
   canvas.moveTo(50,50);
   canvas.lineTo(70,250);
   canvas.lineTo(300,200);
+  canvas.closePath();
+  canvas.stroke();
 
 
 };
