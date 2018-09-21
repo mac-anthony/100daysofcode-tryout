@@ -55,7 +55,7 @@ function executeFirst() {
   var pic = new Image();
   pic.src="image/unsplash5.jpeg";
   pic.addEventListener('load', function(){
-    canvas.drawImage(pic,0,0,x.Width,x.height)
+    canvas.drawImage(pic,0,0,x.width,x.height)
   }, false)
 
 
