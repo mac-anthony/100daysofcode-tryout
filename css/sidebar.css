@@ -1,0 +1,44 @@
+ *{
+   margin: 0px;
+   padding: 0px;
+  font-family: sans-serif;
+ }
+
+
+ #sidebar{
+   position: fixed;
+    /* margin: 50px; */
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;
+ }
+
+ #sidebar ul li{
+   color: rgba(230,320,230,0.6);
+   
+   list-style: none;
+   padding: 20px 18px;
+   border-bottom: 1px solid rgba(100,100,100,0.9)
+ }
+
+ #sidebar.active {
+   left: 0px;
+ }
+ 
+
+ #sidebar .toggle-btn{
+   position: absolute;;
+   left: 230px;
+   top: 10px;
+ }
+
+ #sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px
+
+ }
